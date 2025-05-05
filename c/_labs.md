@@ -1,7 +1,7 @@
 
-[ ] [Hello World](#hello-world)
+[ ] [Hello World](#hello-world)     
 [ ] [Variables Simple](#variables-simple)   
-[ ] [If Simple](#if-simple)
+[ ] [If Simple](#if-simple)     
 [ ] [...]()   
 [ ] [Stack Array](#stack-array)   
 [ ] [Heap Array](#heap-array)   
