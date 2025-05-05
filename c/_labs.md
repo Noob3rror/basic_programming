@@ -1,20 +1,53 @@
 
+[ ] [Hello World](#hello-world)
 [ ] [Variables Simple](#variables-simple)   
+[ ] [If Simple](#if-simple)
 [ ] [...]()   
 [ ] [Stack Array](#stack-array)   
 [ ] [Heap Array](#heap-array)   
 [ ] [Search an Array](#search-an-array)   
 
+### Hello World
+Create a `.c` file and populate it with a 'hello world' program.
+- Include `<stdio.h>` to access the `printf()` function.
+    ```c
+    #include <stdio.h>
+    ```
+- Use a parameter-less main function as your entry point
+    ```c
+    int main(void)
+    {
+        // ...
+    }
+    ```
+- Print out your hello world message.
+    - Be sure to include the `\n` (new line escape sequence) as `printf()` does not include this by default.
+    ```c
+    printf("Hello, world!\n");
+    ```
+- Remember to `return 0;` on success;
+    ```c
+    int main(void)
+    {
+        // ...
+        return 0;
+    }
+    ```
+---
 ### Variables Simple
 Create at least 3 variables of different types and print their values out.
-- Include <stdio.h> and use the `printf()` function to print the values.
+- Include <stdio.h> and use the `printf()` function (see [Hello World](#hello-world)) to print the values.
     - You will need to research what **format specifier** is required for each of your 3 types.
+    ```c
+        int int_value = 1234;
+        printf("integer specifier is \%d: %d\n", int_value);
+    ```
 - Bonus: Also print the memory addresses of these variables.
 ---
+### If Simple
 
 
-
-
+---
 ### Stack Array
 
 ---

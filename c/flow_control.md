@@ -23,6 +23,7 @@
     }
     ```
 - If only 1 line of code is to be executed the `{}` may be omitted.
+    - This is true for all code block statements (`if`, `for`, `while`, `else`, etc)
     ```c
     if (true) // This will always evaluate as true
         printf("This will always print.\n");
