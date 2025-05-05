@@ -1,13 +1,18 @@
-
-[ ] [Hello World](#hello-world)     
-[ ] [Variables Simple](#variables-simple)   
-[ ] [If Simple](#if-simple)     
-[ ] [...]()   
-[ ] [Stack Array](#stack-array)   
-[ ] [Heap Array](#heap-array)   
-[ ] [Search an Array](#search-an-array)   
-
+|   | Easy                                    |   | Medium |   | Hard     |
+|---|-----------------------------------------|---|--------|---|----------|
+|[ ]|[Hello World](#hello-world)              |[ ]|Pointers|[ ]|Threading |
+|[ ]|[Simple Compilation](#simple-compilation)|[ ]|        |[ ]|Sockets   |
+|[ ]|[Variables Simple](#variables-simple)    |[ ]|        |[ ]|Sockets   |
+|[ ]|[If Simple](#if-simple)                  |[ ]|        |[ ]|          |
+|[ ]|[Loops Simple](#loops-simple)            |[ ]|        |[ ]|          |
+|[ ]|[Stack Array](#stack-array)              |[ ]|        |[ ]|          |
+|[ ]|[Heap Array](#heap-array)                |[ ]|        |[ ]|          |
+|[ ]|[Search an Array](#search-an-array)      |[ ]|        |[ ]|          |
+---
+---
 ### Hello World
+[main_function.md](./main_function.md), [files.md](./files.md)
+
 Create a `.c` file and populate it with a 'hello world' program.
 - Include `<stdio.h>` to access the `printf()` function.
     ```c
@@ -34,7 +39,20 @@ Create a `.c` file and populate it with a 'hello world' program.
     }
     ```
 ---
+### Simple Compilation
+[compiling.md](./compiling.md)
+
+Compile your 'Hello World' program using `gcc`. Either use a linux OS or utilize WSL2 in Windows.   
+    `gcc -o main main.c`
+- Replace `main` with the name you want to output your program as.
+- Replace `main.c` with whatever you called your hello world `.c` file.
+- Execute with `./main`
+
+
+---
 ### Variables Simple
+[types.md](./types.md)
+
 Create at least 3 variables of different types and print their values out.
 - Include <stdio.h> and use the `printf()` function (see [Hello World](#hello-world)) to print the values.
     - You will need to research what **format specifier** is required for each of your 3 types.
@@ -45,7 +63,11 @@ Create at least 3 variables of different types and print their values out.
 - Bonus: Also print the memory addresses of these variables.
 ---
 ### If Simple
+[flow_control.md](./flow_control.md)
 
+
+---
+### Loops Simple
 
 ---
 ### Stack Array
