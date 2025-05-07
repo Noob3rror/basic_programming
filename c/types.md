@@ -1,20 +1,4 @@
 # C Value Types
-- [Standard Types](#standard-types)
-    - [void](#void)
-    - [char](#char)
-    - [short](#short)
-    - [int](#int)
-    - [long](#long)
-    - [long long](#long-long)
-    - [float](#float)
-    - [double](#double)
-    - [signed](#signed)
-    - [unsigned](#unsigned)
-- [Twos Complement](#twos-complement) *(How negative numbers work)*
-- [Floating Point](#floating-point-representation) *(How floating point numbers work)*
-- [Extended Integer Types](#extended-integer-types) *<stdint.h>*
-    - [Fixed-Width](#fixed-width-integer-types)
-    - [Minimum-Width](#minimum-width-integer-types)
 ## Standard Types
 ### void
 - The NULL type, effectively meaning no/unknown type.

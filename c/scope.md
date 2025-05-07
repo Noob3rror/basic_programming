@@ -1,7 +1,3 @@
-- [Scope](#scope)
-    - [Local Scope](#block-or-local-scope)
-    - [Global Scope](#file-or-global-scope)
-    - [Prototype Scope](#function-prototype-scope)
 # Scope
 Scope is the region of the program that a variable, function or identifier is visible and accessible.
 ## Block or Local Scope
