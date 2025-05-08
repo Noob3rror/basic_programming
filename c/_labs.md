@@ -71,11 +71,13 @@ Use conditional statements (`if`, `else if`, `else`) to execute different blocks
 - Execute print statements under the following conditions:
     - If seconds is odd print -> the seconds are odd: `current seconds`
     - If seconds is even print -> the seconds are even: `current seconds`
-    - If minutes is a multiple of 3 ignore the odd / even conditions and print -> minutes is a multiple of 3: `current minutes`
+    - If minutes is a multiple of 3 print -> minutes is a multiple of 3: `current minutes`
+        - **Do not print the odd / even condition if this condition is true.**
     - If seconds is 2 print -> the seconds are 2: `current seconds`
-        - **Do not print the seconds is even message if seconds is 0**
+        - **Do not print the seconds is even message if this condition is true.**
 - Use the code snippet to help you with getting the time.
 ```c
+
 #include <time.h>
 
 int main(void)
@@ -110,10 +112,15 @@ const char* strings[] = {"elephant", "cat", "giraffe", "gorilla", "cow"};
 ```
 ---
 ### Stack Array
-
+Create an array on the stack cotaining 15 elements. Safely loop over the array and assign a unique value to each element.
+- The type of the array is up to you.
+- Use a `#define` macro to set the size of the array. 
 ---
 ### Heap Array
-
+Create an array of `uint32_t` on the heap. Print the values of each element of the array.
+- Use `malloc` from `<stdlib.h>` to allocate your array
+- Print each element on new lines.
+- Run your code several times. 
 ---
 ## Medium
 ---
