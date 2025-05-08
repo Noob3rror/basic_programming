@@ -29,13 +29,13 @@
 
 // Forward declaration.
 // Single dimensional array.
-// Mult-dimensional array
+// Multi-dimensional array
 //Print out the contents of any sized array.
 /// @brief Print out the contents of any sized array.
 /// @param array Pointer to the array.
 /// @param total_elements The total number of elements in the array. 
 
-//arithmatic
+//arithmetic
 //pre / post inc and dec ++x x++
 
 // args char** argv char* argv[]
