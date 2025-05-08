@@ -1,4 +1,20 @@
 # C Value Types
+- [Standard Types](#standard-types)
+    - [void](#void)
+    - [char](#char)
+    - [short](#short)
+    - [int](#int)
+    - [long](#long)
+    - [long long](#long-long)
+    - [float](#float)
+    - [double](#double)
+    - [signed](#signed)
+    - [unsigned](#unsigned)
+- [Twos Complement](#twos-complement) *(How negative numbers work)*
+- [Floating Point](#floating-point-representation) *(How floating point numbers work)*
+- [Extended Integer Types](#extended-integer-types) *<stdint.h>*
+    - [Fixed-Width](#fixed-width-integer-types)
+    - [Minimum-Width](#minimum-width-integer-types)
 ## Standard Types
 ### void
 - The NULL type, effectively meaning no/unknown type.
@@ -54,7 +70,7 @@
 
 ## Twos-Complement
 Used to represent negative numbers in binary.
-- The left most but is used to represent the negative sign `-`
+- The left most bit is used to represent the negative sign `-`
 - Example
     - Start with the positive representation (`5`) = `00000101`
     - Invert each bit                            = `11111010`
