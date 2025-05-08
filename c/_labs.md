@@ -1,14 +1,15 @@
-|   | Easy                                    |   | Medium |   | Hard     |
-|---|-----------------------------------------|---|--------|---|----------|
-|[ ]|[Hello World](#hello-world)              |[ ]|Pointers|[ ]|Threading |
-|[ ]|[Simple Compilation](#simple-compilation)|[ ]|        |[ ]|Sockets   |
-|[ ]|[Variables Simple](#variables-simple)    |[ ]|        |[ ]|Sockets   |
-|[ ]|[If Simple](#if-simple)                  |[ ]|        |[ ]|          |
-|[ ]|[Loops Simple](#loops-simple)            |[ ]|        |[ ]|          |
-|[ ]|[Stack Array](#stack-array)              |[ ]|        |[ ]|          |
-|[ ]|[Heap Array](#heap-array)                |[ ]|        |[ ]|          |
-|[ ]|[Search an Array](#search-an-array)      |[ ]|        |[ ]|          |
+|   | Easy                                    |   | Medium                            |   | Hard     |
+|---|-----------------------------------------|---|-----------------------------------|---|----------|
+|[ ]|[Hello World](#hello-world)              |[ ]|Pointers                           |[ ]|Threading |
+|[ ]|[Simple Compilation](#simple-compilation)|[ ]|[Search an Array](#search-an-array)|[ ]|Sockets   |
+|[ ]|[Variables Simple](#variables-simple)    |[ ]|                                   |[ ]|Sockets   |
+|[ ]|[If Simple](#if-simple)                  |[ ]|                                   |[ ]|          |
+|[ ]|[Loops Simple](#loops-simple)            |[ ]|                                   |[ ]|          |
+|[ ]|[Stack Array](#stack-array)              |[ ]|                                   |[ ]|          |
+|[ ]|[Heap Array](#heap-array)                |[ ]|                                   |[ ]|          |
+|[ ]|                                         |[ ]|                                   |[ ]|          |
 ---
+## Easy
 ---
 ### Hello World
 [main_function.md](./main_function.md), [files.md](./files.md)
@@ -39,18 +40,18 @@ Create a `.c` file and populate it with a 'hello world' program.
     }
     ```
 ---
-### Simple Compilation
+### Compilation
 [compiling.md](./compiling.md)
 
 Compile your 'Hello World' program using `gcc`. Either use a linux OS or utilize WSL2 in Windows.   
-    `gcc -o main main.c`
+    `gcc main.c -o main`
 - Replace `main` with the name you want to output your program as.
 - Replace `main.c` with whatever you called your hello world `.c` file.
 - Execute with `./main`
 
 
 ---
-### Variables Simple
+### Variables
 [types.md](./types.md)
 
 Create at least 3 variables of different types and print their values out.
@@ -63,7 +64,7 @@ Create at least 3 variables of different types and print their values out.
 - Bonus 1: Print the memory addresses of these variables.
 - Bonus 2: Print the memoru addresses in hexidecimal notation.
 ---
-### If Simple
+### If
 [flow_control.md](./flow_control.md)
 
 Use conditional statements (`if`, `else if`, `else`) to execute different blocks of code based on the current time.
@@ -98,8 +99,15 @@ int main(void)
 ```
 
 ---
-### Loops Simple
-
+### Loops
+Using the provided array and various loops (`for`, `while`, `do while`) perform the following tasks:
+- Print the contents of the strings array 1 element per line
+- Print them in reverse order
+- Print at least 1 element then stop iterating if the current element starts with `e`. `strings[0][0]` will give you the first letter of the first string.
+- Be sure to use each of the 3 loops `for`, `while`, `do while`.
+```c
+const char* strings[] = {"elephant", "cat", "giraffe", "gorilla", "cow"};
+```
 ---
 ### Stack Array
 
@@ -107,10 +115,12 @@ int main(void)
 ### Heap Array
 
 ---
+## Medium
+---
 ### Search an Array
 Create a function that uses a `for` loop to iterate an array and find a specific value. Return the index of that value.
 - Disregard multiple matching values and simply return the first index with a matching value.
 - You may use a 'global' array to keep things simple but if you want to practice pointers have the function take a pointer to the array to search.
-- The array can hold any data type you want but I suggest a integer type for simplicity.
+- The array can hold any data type you want but I suggest an integer type for simplicity.
 - Determine what the function should do when no match is found. Consider usage of this function and what is 'safe-code' practices.
 ---
