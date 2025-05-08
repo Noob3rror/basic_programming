@@ -17,7 +17,7 @@
     - `sudo apt install git`
 - Mingw-w64
     - `sudo apt-get install mingw-w64`
-
+## Using Git
 ### Clone this Repo
 - Suggest navigating to a `src` directory
     - ex: `/home/student/src`
@@ -59,4 +59,22 @@
     - Select the files to stage and stage them wit the + symbol
         - Stage all changes with + revealed when hovering over `Changes`
     - Click Commit
-    -
+    - Click Sync Changes
+- **Note:** Empty folders will not be pushed. You can add an empty placeholder file if you need the folders to be pushed.
+
+### .gitignore File
+- Used to ignore files that you do not want to include in the remote branch. They will remain only in your local branch.
+- Each file or pattern is placed on a new line.
+- Example `.gitignore` file stored at the source root
+```
+# This is a comment
+*.exe        # Ignore all exe files
+*.tmp        # Ignore all tmp files
+
+build/       # Ignore the entire build directory
+
+logs/*       # Ignore the contents of logs directory but not the directory itself
+!/logs/.keep # Do not ignore .keep file in logs directory
+
+secrets.txt  # Ignore a specific file
+```

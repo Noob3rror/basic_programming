@@ -60,11 +60,42 @@ Create at least 3 variables of different types and print their values out.
         int int_value = 1234;
         printf("integer specifier is \%d: %d\n", int_value);
     ```
-- Bonus: Also print the memory addresses of these variables.
+- Bonus 1: Print the memory addresses of these variables.
+- Bonus 2: Print the memoru addresses in hexidecimal notation.
 ---
 ### If Simple
 [flow_control.md](./flow_control.md)
 
+Use conditional statements (`if`, `else if`, `else`) to execute different blocks of code based on the current time.
+- Execute print statements under the following conditions:
+    - If seconds is odd print -> the seconds are odd: `current seconds`
+    - If seconds is even print -> the seconds are even: `current seconds`
+    - If minutes is a multiple of 3 ignore the odd / even conditions and print -> minutes is a multiple of 3: `current minutes`
+    - If seconds is 2 print -> the seconds are 2: `current seconds`
+        - **Do not print the seconds is even message if seconds is 0**
+- Use the code snippet to help you with getting the time.
+```c
+#include <time.h>
+
+int main(void)
+{
+    time_t now = time(NULL); // get time now
+
+    struct tm* local = localtime(&now); // get as local time
+
+    // access specific parts of time
+    // inspect struct tm to find its members
+    // You do not have to assign to int hour/ int min, this is just an example
+    int hour = local->tm_hour; 
+    int min = local->tm_min;
+
+    // NOTE: be careful with the month and year member of struct tm
+
+    // Your code here...
+
+    return 0;
+}
+```
 
 ---
 ### Loops Simple
