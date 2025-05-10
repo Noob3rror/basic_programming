@@ -53,8 +53,9 @@
 - Always signed.
 - No suffix.
     - long double is possible
-    - Suffix = `L`
+    - Suffix = `L` 
 - `double my_double = 3.4556234445;`
+- `long double my_long_double = 12.3412341231231434423123123L;`
 ### signed
 - Used to specifically declare an integer type as holding a negative or positive value.
 - Compilers generally assume this and thus `signed` can be omitted.
@@ -68,6 +69,7 @@
 
 ***Note: Suffixes on literals (explicit value like 32, 16.5, 0xAC01) act as hints to the compiler as well as to humans as to the intended size of a value. I always use them with floats.***
 
+---
 ## Twos-Complement
 Used to represent negative numbers in binary.
 - The left most bit is used to represent the negative sign `-`
@@ -76,7 +78,7 @@ Used to represent negative numbers in binary.
     - Invert each bit                            = `11111010`
     - Add 1                                      = `11111011`
     - `11111011` = `-5`
-
+---
 ## Floating-Point Representation
 The IEEE 754 single/double precision (`float`/`double`)
 
@@ -94,7 +96,7 @@ The IEEE 754 single/double precision (`float`/`double`)
 - 127 for `float`
 - 1023 for `double`
 
-#### Example `float` for 6.5
+#### Example `float` for the value 6.5
 - Binary `110.1` => `1.101 x 2^2` (Like scientific notation in decimal 1.5 x 10^2 = 150)
 - Sign bit = `0`
 - Exponent = `2 + 127` = 129 -> `10000001`
@@ -105,7 +107,7 @@ The IEEE 754 single/double precision (`float`/`double`)
 - Final representation = `0 10000001 10100000000000000000000`
 
 
-
+---
 ## Extended Integer Types
 ### <stdint.h>
 Provides a standard library of fixed-width integer types. Useful for writing portable code across different platforms since the integer types listed above are not always guaranteed to be the same size in bytes everywhere.

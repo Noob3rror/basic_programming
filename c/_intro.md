@@ -1,7 +1,6 @@
 
 
 # Intro
----
 C is a general-purpose, procedural programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It was originally designed to write the Unix operating system and has since become one of the most widely used and influential programming languages in the world.
 
 ***Key Characteristics:***

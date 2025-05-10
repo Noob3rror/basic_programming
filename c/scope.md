@@ -13,7 +13,7 @@ Scope is the region of the program that a variable, function or identifier is vi
             x = x - 1; // Valid: x is visible here because it was declare outside of the if statement
         }
 
-        x = x + y; // Error: y is not visible here
+        x = x + y; // Error: y is not visible here (out-of-scope)
     }
     ```
 ## File or Global Scope
@@ -36,4 +36,4 @@ Scope is the region of the program that a variable, function or identifier is vi
 ## Function Prototype Scope
 - Applies to variable names used in function prototypes.
 - Effectively when declaring a prototype the parameter names do not matter and can even be omitted.
-- See more in functions document.
+- See [functions.md](./functions.md).

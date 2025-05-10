@@ -1,5 +1,5 @@
 # Syntax
----
+
 The syntax of a language is the set of rules that define how to language works and what is valid code.
 
 ---
