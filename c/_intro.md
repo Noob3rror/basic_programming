@@ -11,7 +11,7 @@ C is a general-purpose, procedural programming language developed in the early 1
 
 ***Typical Uses:***
 - Operating systems (Unix, Linux, Windows kernels)
-- Embedded systems (firmware in microcontrollers)
+- Embedded systems (firmware in micro-controllers)
 - Compilers and interpreters
 - Game engines
 - Networking software

@@ -62,7 +62,7 @@ Create at least 3 variables of different types and print their values out.
         printf("integer specifier is \%d: %d\n", int_value);
     ```
 - Bonus 1: Print the memory addresses of these variables.
-- Bonus 2: Print the memoru addresses in hexidecimal notation.
+- Bonus 2: Print the memory addresses in hexadecimal notation.
 ---
 ### If
 [flow_control.md](./flow_control.md)
@@ -112,7 +112,7 @@ const char* strings[] = {"elephant", "cat", "giraffe", "gorilla", "cow"};
 ```
 ---
 ### Stack Array
-Create an array on the stack cotaining 15 elements. Safely loop over the array and assign a unique value to each element.
+Create an array on the stack containing 15 elements. Safely loop over the array and assign a unique value to each element.
 - The type of the array is up to you.
 - Use a `#define` macro to set the size of the array. 
 ---
