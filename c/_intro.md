@@ -1,21 +1,60 @@
 
 
 # Intro
+---
+C is a general-purpose, procedural programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It was originally designed to write the Unix operating system and has since become one of the most widely used and influential programming languages in the world.
+
+***Key Characteristics:***
+- **Low-level access**: Allows manipulation of memory via pointers.
+- **Efficient and fast**: Close to machine-level operations, making it ideal for systems programming.
+- **Portable**: Code can be compiled and run on many different types of machines with minimal changes.
+- **Compiled**: C programs are turned into machine code using a compiler like GCC or Clang.
+
+***Typical Uses:***
+- Operating systems (Unix, Linux, Windows kernels)
+- Embedded systems (firmware in microcontrollers)
+- Compilers and interpreters
+- Game engines
+- Networking software
+
+---
+
 ## High-Level vs Low-Level
 High-level languages include Python, C#, Go, Javascript, Rust and C. Tho C is much closer to a low-level language.
 
-> **High-level** languages are human readable as their syntax close resembles human language. They abstract away hardware details making them easier to read, write, and maintain.
+> **High-level** languages are human readable as their syntax closely resembles human language. They abstract away hardware details making them easier to read, write, and maintain.
 
-> **Low-level** languages are closer to machine code. Proide direct control over hardware and memory and are less abstract. For example in high-level languages you rarely if ever directly interact with CPU registers but you do in a low-level language like x86 assembly.
+> **Low-level** languages are closer to machine code. Provide direct control over hardware and memory and are less abstract. For example in high-level languages you rarely if ever directly interact with CPU registers but you do in a low-level language like x86 assembly.
+
+---
 
 ## Compiled vs Interpreted
 C is a compiled language, whereas a language like Python is interpreted.
-> **Compiled** languages must but *compiled* or *built*. The source files are ran thru a compiler (gcc, msvc, cl.exe, etc) and built into binary files containing machine code that can be directly executed by a CPU. Due to this compiled languages are almost always faster. However, because they are compiled they must be compiled targeted at each platform you intend to run them on.
+> **Compiled** languages must but *compiled* or *built*. The source files are ran thru a compiler (gcc, msvc, cl.exe, etc) and built into binary files containing machine code that can be directly executed by a CPU. Due to this compiled languages are almost always faster. However, because they are compiled they must be compiled for each platform you intend to run them on.
 
 > **Interpreted** languages are not compiled to binary and instead are *'compiled'* at run time. They require an interpreter to be installed in order to execute their code. Because of this interpreted languages tend to be slower. However, because they can run on any platform that its interpreter is they tend to be very portable.
 
+---
+
+## C Files
+See [files.md](./files.md).
+
+---
+
+## C Syntax
+See [syntax.md](./syntax.md).
+
+---
+
 ## C vs Assembly
 Here we will see an example of a simple c program and it's compiled assembly representation. *C source code is generally very close to the final assembled version.*
+
+- The example uses the `write()` function from `<unistd.h>`. Below is an explanation of it parameters.
+    - `ssize_t write(int fildes, const void *buf, size_t nbyte);`
+        - `ssize_t` Returns a signed integer
+        - `int fildes` File descriptor to write to
+        - `const void *buff` Address of a buffer to write
+        - `size_t nbyte` Number of bytes to write
 
 ```c
 #include <unistd.h>
@@ -85,14 +124,3 @@ return 0;
 - Here we `xor` the `eax` register with itself which will place `0` into `eax`. This is more efficient than `mov eax, 0`. (Ie it takes fewer clock cycles.) `eax` is used as the return value.
 - Finally `ret` will perform the same function as a `return` and move the stack pointer backer to the caller's address.
 
-## C Files
-C source code is divided into two types of files. `.c` and `.h` files.
-See [files.md](./files.md) for a more in depth explaination.
-
-
-
-`ssize_t write(int fildes, const void *buf, size_t nbyte);`
-- `ssize_t` Returns a signed integer
-- `int fildes` File descriptor to write to
-- `const void *buff` Address of a buffer to write
-- `size_t nbyte` Number of bytes to write

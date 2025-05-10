@@ -1,13 +1,13 @@
 |   | Easy                                    |   | Medium                            |   | Hard     |
 |---|-----------------------------------------|---|-----------------------------------|---|----------|
-|[ ]|[Hello World](#hello-world)              |[ ]|Pointers                           |[ ]|Threading |
-|[ ]|[Simple Compilation](#simple-compilation)|[ ]|[Search an Array](#search-an-array)|[ ]|Sockets   |
-|[ ]|[Variables Simple](#variables-simple)    |[ ]|                                   |[ ]|Sockets   |
-|[ ]|[If Simple](#if-simple)                  |[ ]|                                   |[ ]|          |
-|[ ]|[Loops Simple](#loops-simple)            |[ ]|                                   |[ ]|          |
-|[ ]|[Stack Array](#stack-array)              |[ ]|                                   |[ ]|          |
-|[ ]|[Heap Array](#heap-array)                |[ ]|                                   |[ ]|          |
-|[ ]|                                         |[ ]|                                   |[ ]|          |
+|[ ]|[Hello World](#hello-world)              |[ ]|                                   |[ ]| |
+|[ ]|[Simple Compilation](#simple-compilation)|[ ]|[Search an Array](#search-an-array)|[ ]|   |
+|[ ]|[Variables Simple](#variables-simple)    |[ ]|                                   |[ ]|   |
+|[ ]|[If Simple](#if-simple)                  |[ ]|Sockets                            |[ ]|[Login](#login)|
+|[ ]|[Loops Simple](#loops-simple)            |[ ]|Threading                          |[ ]|[Login 2](#login-2)|
+|[ ]|[Stack Array](#stack-array)              |[ ]|                                   |[ ]|[Login 3](#login-3)|
+|[ ]|[Heap Array](#heap-array)                |[ ]|                                   |[ ]|[Login 4](#login-4)|
+|[ ]|Pointers                                 |[ ]|                                   |[ ]|          |
 ---
 ## Easy
 ---
@@ -130,4 +130,41 @@ Create a function that uses a `for` loop to iterate an array and find a specific
 - You may use a 'global' array to keep things simple but if you want to practice pointers have the function take a pointer to the array to search.
 - The array can hold any data type you want but I suggest an integer type for simplicity.
 - Determine what the function should do when no match is found. Consider usage of this function and what is 'safe-code' practices.
+---
+
+
+
+## Hard
+
+---
+### Login
+Create a program that a user logs into. 
+- Prompt the user to add a user name and password or to log in.
+- Store the user name and associated password in a file on disk (in the same directory as the program is fine).
+    - If a name is already present inform the user that user name is unavailable.
+    - Give the user a method to 'cancel' adding a new user and return to the starting prompt.
+- Validate login attempts with the stored user name/password file.
+    - Print a message for login success or failure.
+---
+### Login 2
+Add a default user ie 'admin'.
+- Print a special message indicating 'admin privileges' on successful log in.
+- The 'admin' user should be able to log in without needing the user name/password stored in the file.
+- Be sure to reserve the 'admin' user name so a user cannot add it to the password file.
+- Bonus 1: Prevent users from being able to use `strings` to find the 'admin' log in information (name and password).
+- Bonus 2: Prevent users from being able to memory dump your program and find the log in name and password (ie in plain text)
+---
+### Login 3
+Assuming you haven't gone above and beyond already, protect the passwords. Ie do not store plain text passwords.
+
+---
+
+### Login 4
+Protect your log in program from brute force/dictionary attacks.
+- Whatever method you implement be sure to inform valid users of any pertinent information necessary.
+    - For example if you will lock a user from logging in after 5 failed attempts inform the user how many attempts remain.
+- Use may use multiple methods to protect your program.
+- Carefully consider your implementation; you may need to update your password file format.
+    - You can assume that your password file is `read-only` or even stored on a server somewhere in the ether.
+- Bonus: Using a lock-out approach allow the failed attempt count to reset after a specified period of time.
 ---

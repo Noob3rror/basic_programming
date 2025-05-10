@@ -1,24 +1,44 @@
-- [C Files](#c-files)
-    - [Common Components](#c-file-common-components)
-    - [Sample](#c-sample)
-- [H Files](#header-files)
-    - [Common Components](#h-file-common-components)
-    - [Sample](#header-sample)
-- [Object Files](#object-files) (TODO)
-    - TODO
-    - TODO
 # Files
 ## C Files
 A `c` file typically contains the **implementation** of a program. Definitions of functions and globals of a `.h` or acts as the entry point of a program (usually named `main.c`). `.c` files are compiled into object (`.o`) files and linked together to produce an executable (`.exe`, `.elf`), library (`.dll`, `.so`) file.
+
+C files are processed from top to bottom which means the order you declare, define and use functions, variables etc matters.
 ### C File Common Components
 - `#include` Statements
     - Include various header files to access their function and variable definitions.
         - ie `<stdio.h>` or standard input/output which contains functions like `printf()`.
+    - Included files are effectively copied and pasted into the current file.
+    ```c
+    #include <stdio.h> // Includes functions related to input/output such as printing characters to a terminal.
+    ```
 - Function Definitions
     - Actual code implementations of functions **declared** in accompanying `.h` files.
+        - Functions can be declared in `.c` files as well. These are function prototypes.
+    - From top to bottom functions must be defined **or** declared before they are used.
+    ```c
+    long factorial(long n); // A function prototype
+
+    // The function definition/implementation
+    long factorial(long n)
+    {
+        // Check for invalid input
+        if (n < 0)
+            return -1;
+
+        long result = 1;
+
+        for (; n > 1; --n)
+        {
+            result *= n;
+        }
+
+        return result;
+    }
+    ```
 - Main Entry Point
     - Only one allowed in a program.
-    - Marks where the program begins.
+    - Marks where the program begins execution.
+        - The true beginning of execution is outside of you `main()` function but that is rarely relevant for writing code.
     ```c
     int main(void)
     {
@@ -27,7 +47,7 @@ A `c` file typically contains the **implementation** of a program. Definitions o
     }
     ```
 - Internal Functions
-    - Functions that only exist within this `.c` file (aka compilation unit).
+    - Functions that only exist within this `.c` file.
     - These functions are inaccessible outside of the file they are defined in.
     - Often marked `static` but not required.
     ```c
@@ -140,3 +160,4 @@ void my_header_only_func(int value)
 #endif
 ```
 ## Object Files
+TODO
