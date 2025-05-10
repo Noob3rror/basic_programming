@@ -63,7 +63,7 @@ A statement ends with a semicolon `;`.
 ```c
 x = y + 2;
 ```
-
+---
 ## Braces and Blocks
 Braces are used to group statements into blocks (see [scope.md](./scope.md) to see how they also define scopes). Used for functions, conditional blocks `if`, `for`, etc.
 ```c
@@ -72,18 +72,14 @@ if (x > 0)
     printf("Positive\n");
 }
 ```
-
 ---
-
 ## Identifiers
 Identifiers are the names for functions, variables, etc.
 - Identifiers must start with a letter (A-Z, a-z) or underscore `_`, and followed by letters, digits, or underscores.
 ```c
 _tempValue_1
 ```
-
 ---
-
 ## Comments
 Comments are notes, messages, etc that are ignored by the compiler and used to explain/document the code or to prevent code from compiling without having to delete it.
 - Single-line comment `//`
@@ -106,5 +102,10 @@ comment
 
 int main(int argc/* Valid comment by generally avoid this*/, char* argv[]) { return 0; }
 ```
-
+---
 ## Punctuation
+TODO
+
+---
+## Strings and Characters
+TODO
