@@ -1,56 +1,83 @@
-🔢 Arithmetic Operators
-Operator	Meaning
-+	Addition
--	Subtraction
-*	Multiplication
-/	Division
-%	Modulus (remainder)
-🔄 Increment / Decrement
-Operator	Meaning
-++	Increment by 1
---	Decrement by 1
-🧠 Relational (Comparison) Operators
-Operator	Meaning
-==	Equal to
-!=	Not equal to
->	Greater than
-<	Less than
->=	Greater than or equal
-<=	Less than or equal
-🧮 Logical Operators
-Operator	Meaning
-&&	Logical AND
-|| Logical OR
-!	Logical NOT
-🧱 Bitwise Operators
-Operator	Meaning
-&	Bitwise AND
-| Bitwise OR
-^	Bitwise XOR
-~	Bitwise NOT
-<<	Left shift
->>	Right shift
-📥 Assignment Operators
-Operator	Meaning
-=	Assign
-+=	Add and assign
--=	Subtract and assign
-*=	Multiply and assign
-/=	Divide and assign
-%=	Modulus and assign
-&=	Bitwise AND and assign
-|= bitwise or and assign
-^=	Bitwise XOR and assign
-<<=	Left shift and assign
->>=	Right shift and assign
-🔍 Other Common Operators
-Operator	Meaning
-sizeof	Size of a data type or variable
-&	Address-of (when used alone)
-*	Dereference pointer
-->	Access struct member via pointer
-.	Access struct member
-[]	Array subscript
-()	Function call
-,	Comma operator
-?:	Ternary (conditional) operator
+## Arithmetic Operators
+- `+` Addition
+- `-` Subtraction
+- `*` Multiplication
+- `/` Division
+- `%` Modulus (remainder)
+
+## Increment / Decrement
+- ++	Increment by 1
+- --	Decrement by 1
+- These operators can be prepended or appended to variables. (ie pre-increment / post-increment)
+    - `--my_value` / `my_value--`
+- If you prepend the operator it will increment/decrement the variable first then use the result in whatever operation. If you append it will use the variable first then increment/decrement the value.
+```c
+int i = 5;
+int a = ++i; // pre-increment: i (5) becomes 6 then is assigned to a
+int b = i++; // post-increment: i (6) is assigned to b; then i becomes 7
+// i == 7
+// a == 6
+// b == 6
+```
+
+## Relational (Comparison) Operators
+- `==`    Equal to
+- `!=`    Not equal to
+- `>`	    Greater than
+- `<`	    Less than
+- `>=`    Greater than or equal
+- `<=`    Less than or equal
+
+## Logical Operators
+- `&&` Logical AND
+- `||` Logical OR
+- `!`  Logical NOT
+
+## Bitwise Operators
+- `&` Bitwise AND
+- `|` Bitwise OR
+- `^` Bitwise XOR
+- `~` Bitwise NOT
+- `<<` Left shift
+- `>>` Right shift
+
+## Assignment Operators
+- `=`	Assign
+- `+=`	Add and assign
+- `-=`	Subtract and assign
+- `*=`	Multiply and assign
+- `/=`	Divide and assign
+- `%=`	Modulus and assign
+- `&=`	Bitwise AND and assign
+- `|=` bitwise or and assign
+- `^=`	Bitwise XOR and assign
+- `<<=`	Left shift and assign
+- `>>=`	Right shift and assign
+
+## Other Common Operators
+- `sizeof`	Size of a data type or variable
+- `&`	Address-of (when prepended to a variable)
+- `*`	Dereference pointer (when prepended to a variable)
+- `->`	Access struct member via pointer
+- `.`	Access struct member
+- `[]`	Array subscript
+- `()`	Function call
+- `,`	Comma operator
+- `?:`	Ternary (conditional) operator
+    - `condition` `?` `value if true` `:` `value if false` `;` 
+    ```c
+    int* ptr = NULL;
+    int is_null = ptr == NULL ? 1 : 0; // 1 == true, 0 == false
+    // Kind of like a compact if statement
+    /*
+    int is_null;
+    if (ptr == NULL)
+    {
+        is_null = 1;
+    }
+    else
+    {
+        is_null = 0;
+    }
+    */
+    ```

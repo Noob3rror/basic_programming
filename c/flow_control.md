@@ -1,17 +1,3 @@
-- [Flow Control](#flow-control)
-    - [if](#if)
-    - [else](#else)
-    - [else if](#else-if)
-    - [switch](#switch)
-    - [case](#case)
-    - [while](#while)
-    - [do while](#do-while)
-    - [for](#for)
-    - [break](#break)
-    - [continue](#continue)
-    - [return](#return)
-    - [goto](#goto)
-
 # Flow Control
 ## if
 - Defines a block of code to execute if some condition evaluates as true.
@@ -60,6 +46,11 @@
     ```
 ## switch
 - Similar to an `if` statement but instead of evaluating for true it executes the code block with the matching `case` statement.
+- `case` values (0, 1, 2, 3 in this example) **must be resolvable at compile time**. This means they must be constant integer expressions.
+    - Integer literals: `-1`, `0`, `1`, `200`, `3333`, ... > `case 7:`
+    - Character literals: `'A'`, `'b'`, `'5'`, `'&'` ... > `case 'b':`
+    - `#define` constants: `$define FOO 15` > `case FOO:`
+    - `enum` values: `enum Color { RED = 1 };` > `case RED:`
     ```c
     int my_int = 3;
     switch (my_int)
