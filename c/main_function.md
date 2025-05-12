@@ -1,6 +1,3 @@
-- [Typical Main](#typical-main-function)
-- [Main Parameters](#main-parameters)
-- [Windows GUI Main](#windows-gui-main-function)
 ## Typical Main Function
 The entry point for your program. Ie where execution begins. The `main()` function is often located in a file named `main.c` but is not a requirement.
 

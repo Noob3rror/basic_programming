@@ -195,10 +195,10 @@
 
 
   auto              
-const       default     
-enum        extern
-               goto   
+            
+        extern
+                  
 register 
-            sizeof      static
-struct      typedef     union
+                  static
+           
         volatile

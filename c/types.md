@@ -204,6 +204,8 @@ const char* immutable_string = "I can't be changed.";
 const short default_port;
 default_port = 443;
 ```
+## Static
+TODO
 ## NULL
 `NULL` represents a null pointer constant. Effectively it is a special pointer that does not point to any valid memory location.
 - Typically defined as `((void*)0)` 

@@ -1,11 +1,3 @@
-- [Memory Allocation](#memory-allocation)
-    - [Static](#static)
-    - [Automatic](#automatic)
-    - [Dynamic](#dynamic)
-        - [malloc](#malloc)
-        - [calloc](#calloc)
-        - [realloc](#realloc)
-        - [free](#free)
 # Memory Allocation
 ## Static
 Memory that is allocated at compile time.

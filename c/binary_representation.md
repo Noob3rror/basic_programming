@@ -34,3 +34,5 @@ The IEEE 754 single/double precision (`float`/`double`)
     - This allows for an additional bit of accuracy.
 - Final representation = `0 10000001 10100000000000000000000`
 
+## Endianness
+TODO
