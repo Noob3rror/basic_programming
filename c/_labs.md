@@ -1,10 +1,10 @@
 |   | Easy                                    |   | Medium                            |   | Hard     |
 |---|-----------------------------------------|---|-----------------------------------|---|----------|
-|[ ]|[Hello World](#hello-world)              |[ ]|                                   |[ ]| |
-|[ ]|[Simple Compilation](#simple-compilation)|[ ]|[Search an Array](#search-an-array)|[ ]|   |
-|[ ]|[Variables Simple](#variables-simple)    |[ ]|                                   |[ ]|   |
-|[ ]|[If Simple](#if-simple)                  |[ ]|Sockets                            |[ ]|[Login](#login)|
-|[ ]|[Loops Simple](#loops-simple)            |[ ]|Threading                          |[ ]|[Login 2](#login-2)|
+|[ ]|                                         |[ ]|                                   |[ ]| |
+|[ ]|                                         |[ ]|[Search an Array](#search-an-array)|[ ]|   |
+|[ ]|[Variables Simple](#variables)           |[ ]|                                   |[ ]|   |
+|[ ]|[If Simple](#if)                         |[ ]|Sockets                            |[ ]|[Login](#login)|
+|[ ]|[Loops Simple](#loops)                   |[ ]|Threading                          |[ ]|[Login 2](#login-2)|
 |[ ]|[Stack Array](#stack-array)              |[ ]|                                   |[ ]|[Login 3](#login-3)|
 |[ ]|[Heap Array](#heap-array)                |[ ]|                                   |[ ]|[Login 4](#login-4)|
 |[ ]|Pointers                                 |[ ]|                                   |[ ]|          |
