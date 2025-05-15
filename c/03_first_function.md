@@ -132,10 +132,3 @@ int main(void)
 ```
 - Now compile your program and you will see it works fine.
 - As you can see we don't need the function prototype as long as our function is defined before it is called.
-
-## Reusability Beyond This Program
-You may find that some of your functions are useful beyond the scope of your current project.
-When that is the case its best to move our functions into their own files so they can be added to any project.
-This is also useful to simply organize our code and avoid having single files with thousands of lines.
-- Create two new files `hello_math.c` and `hello_math.h`.
-- Open `hello_math.h`

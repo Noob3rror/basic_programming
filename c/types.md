@@ -256,7 +256,7 @@ typedef struct
 Point p1;
 ```
 
-Function pointers
+## Function pointers
 ```c
 typedef int (*operation)(int, int); 
 // The word operation is now or keyword for a function that 
