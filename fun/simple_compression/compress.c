@@ -15,7 +15,7 @@ int compressStdIn()
     // Allocate a buffer to store each line of stdin
     char* lineBuffer = NULL;
 
-    if ((lineBuffer = (char*)calloc(LINE_BUFFER_SIZE, sizeof(char))) == NULL)
+    if ((lineBuffer = (char*)malloc(LINE_BUFFER_SIZE * sizeof(char))) == NULL)
     {
         perror("calloc");
         status = ERROR;

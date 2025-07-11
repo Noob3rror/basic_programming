@@ -5,7 +5,7 @@
 #define NO_ERROR 0
 #define ERROR 1
 
-int decompress()
+int decompressStdIn()
 {
     int status = NO_ERROR;
     int sizeByte = 0;
@@ -38,7 +38,7 @@ CLEANUP:
 
 int main(int argc, char** argv)
 {
-    if (decompress() != NO_ERROR)
+    if (decompressStdIn() != NO_ERROR)
     {
         //failed
         goto CLEANUP;
