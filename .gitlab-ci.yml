@@ -1,0 +1,14 @@
+stages:
+  - test
+
+python_tests:
+  stage: test
+  image: python:3.10
+  script:
+    - 
+
+c_tests:
+  stage: test
+  image: gcc:latest
+  script:
+    - 

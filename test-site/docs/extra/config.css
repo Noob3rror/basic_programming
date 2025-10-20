@@ -1,0 +1,189 @@
+/* Make the center column wider */
+.md-grid {
+  max-width: 1800px;  /* default is ~1220px */
+}
+
+.md-content {
+    max-width: 100%;
+}
+
+/* Make the logo container taller but hide overflow */
+.md-header__button.md-logo {
+  height: 64px;           /* how much of the logo to show */
+  overflow: hidden;       /* crop anything outside */
+  display: flex;          /* keep alignment sane */
+  align-items: center;
+}
+
+/* Scale up the logo itself */
+.md-header__button.md-logo img {
+  height: 100%;           /* make it bigger than the container */
+  width: auto;            /* keep aspect ratio */
+  transform: translateY(0px);  /* adjust vertical offset if needed */
+}
+
+/* H1 - top-level header */
+.md-content h1 {
+    color: #8189c0;   /* change to your preferred color */
+    font-weight: 700;  /* bold */
+}
+
+/* H2 */
+.md-content h2 {
+    color: #5765c2;
+    font-weight: 600;
+}
+
+/* H3 */
+.md-content h3 {
+    color: #2b44d1;
+    font-weight: 550;
+}
+
+/* H4 */
+.md-content h4 {
+    color: #ff9800;
+    font-weight: 100;
+}
+
+/* Style all tables in page content */
+.md-content table {
+    border-collapse: collapse;  /*remove double borders*/
+    /* border: 2px solid #ffffff; */
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Table headers */
+.md-content table th {
+    background-color: #2e4461; /* header background color */
+    color: white;              /* header text color */
+    font-weight: 600;
+    /* padding: 2px 2px; */
+    text-align: left;
+    padding-top: 4px !important;
+    padding-bottom: 0px !important;
+}
+
+/* Table cells */
+.md-content table td {
+    font-size: 1em;
+    /* padding: 2px 2px; */
+    /* border-bottom: 1px solid #ddd; */
+    padding-top: 10px !important;
+    padding-bottom: 6px !important;
+    line-height: 1.2 !important;
+}
+
+/* Alternate row colors (striped table) */
+.md-content table tr:nth-child(odd) {
+    background-color: #272c2c;
+}
+
+.md-content table td .nowrap,
+.md-content table td .nowrap * {
+    white-space: nowrap !important;
+}
+
+.md-content code {
+    background-color: #13191b;
+    color: #b2b4b6;           
+    padding: 2px 4px;         
+    border-radius: 4px;       
+    /* font-family: monospace; */
+    font-size: 0.8em;
+}
+
+.md-content code.nowrap {
+    white-space: nowrap;
+}
+
+/* .md-content code:hover {
+    background-color: #37474f;
+} */
+
+/* Indent everything that follows an h4 until the next header */
+.md-content h4 ~ * {
+  margin-left: 1.5em;
+}
+
+/* Reset indentation at new headers */
+.md-content h2,
+.md-content h3,
+.md-content h4 {
+  margin-left: 0;
+}
+
+.bg-text {
+    color: #cfd2d4;
+    /* padding: 2px 4px; */
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left:  4px;
+    border-radius: 0px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.bg-a { background-color: #658592; }
+.bg-b { background-color: #537552; }
+.bg-c { background-color: #8f7a4e; }
+.bg-d { background-color: #2f3857; }
+.bg-e { background-color: #412b46; }
+.bg-f { background-color: #4e3131; }
+.bg-g { background-color: #4d452c; }
+.bg-h { background-color: #32472e; }
+
+.quiz {
+    border: 1px solid #ffa600;
+    padding: 0px 1em;
+    margin: 0.5em 0em;
+    border-radius: 4px;
+    background-color: #13161d;
+}
+
+.quiz p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.quiz-result {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #a76a1a;
+}
+
+.quiz label {
+    display:flex;
+    margin: 0em 0em;
+    padding: 0em 0em;
+    border-radius: 4px;
+}
+
+.quiz label.correct {
+    background-color: #006904; /* green for correct */
+}
+
+.quiz label.incorrect {
+    background-color: #97000f; /* red for incorrect */
+}
+
+.quiz button {
+    /* margin-top: 0em;
+    padding: 0px 0.8em;
+    height: 24px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;  
+    justify-content: center; */
+    /* transform: translateY(px); */
+    height: 28px;
+    padding: 0.5em 1em !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.quiz-result {
+    margin-top: 0.5em;
+    font-weight: bold;
+}

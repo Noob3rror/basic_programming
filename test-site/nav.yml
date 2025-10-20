@@ -1,0 +1,27 @@
+- Home: index.md
+- Reference:
+  - C:
+    - 'Arrays': reference/c/arrays.md
+    - 'Binary representation': reference/c/binary_representation.md
+    - 'Casting': reference/c/casting.md
+    - 'Compiling': reference/c/compiling.md
+    - 'Files': reference/c/files.md
+    - 'Flow control': reference/c/flow_control.md
+    - 'Functions': reference/c/functions.md
+    - 'C Overview': reference/c/index.md
+    - 'Linux executable': reference/c/linux_executable.md
+    - 'Macros': reference/c/macros.md
+    - 'Main function': reference/c/main_function.md
+    - 'Memory allocation': reference/c/memory_allocation.md
+    - 'Operators': reference/c/operators.md
+    - 'Pointers': reference/c/pointers.md
+    - 'Scope': reference/c/scope.md
+    - 'Strings': reference/c/strings.md
+    - 'Syntax': reference/c/syntax.md
+    - 'Types': reference/c/types.md
+    - 'Variables': reference/c/variables.md
+  - Python:
+    - 'Python Overview': reference/python/index.md
+  - Windows:
+    - 'Windows executable': reference/windows/windows_executable.md
+    - 'Windows process memory': reference/windows/windows_process_memory.md

@@ -1,0 +1,114 @@
+site_name: C & Python Training
+copyright: Property of the U.S. Government - Distribution Statement C
+docs_dir: docs
+
+
+theme:
+    name: material
+    logo: images/book_logo.png
+    favicon: images/book_logo.png
+    font: false
+    features:
+        - content.code.copy
+        - content.code.annotate
+        - toc.follow
+    highlightjs: true
+    highlight_theme: dracula
+    palette:
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default 
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
+
+    font:
+        code: Roboto Mono
+
+markdown_extensions:
+    # - codehilite:
+    #     guess_lang: false
+    #     linenums: true
+    - abbr
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    # - pymdownx.blocks.admonition
+    # - pymdownx.blocks.details
+    # - pymdownx.blocks.tab
+    # - pymdownx.blocks.html
+    # - pymdownx.blocks.admonition
+    - pymdownx.highlight:
+        use_pygments: true
+        anchor_linenums: false
+        guess_lang: false
+        linenums_style: pymdownx-inline
+    - pymdownx.inlinehilite
+
+extra:
+    generator: false
+    consent:
+        title: Distribution Statement C
+        description: >- 
+            DISTRIBUTION STATEMENT C. Distribution authorized to U.S. Government   agencies and their
+            contractors (CRITICAL TECHNOLOGY) (14 May 2021). Other requests for this document shall be
+            referred to Director, Operational Test & Evaluation (DOT&E) Cyber Assessment Program
+            Development Working Group (CAPDWG).
+        actions:
+           - accept
+
+extra_css:
+    - extra/config.css
+
+extra_javascript:
+    - extra/test.js
+
+nav:
+- Home: index.md
+- Training:
+  - C:
+    - 'Labs': training/c/_labs.md
+    - '001': training/c/001.md 
+  - Python:
+    - '001': training/python/001.md
+  - CNOlib:
+    - '001': training/cnolib/001.md
+- Reference:
+  - C:
+    - 'C Overview': reference/c/index.md
+    - 'Arrays': reference/c/arrays.md
+    - 'Binary Representation': reference/c/binary_representation.md
+    - 'Casting': reference/c/casting.md
+    - 'Compiling': reference/c/compiling.md
+    - 'Files': reference/c/files.md
+    - 'Flow Control': reference/c/flow_control.md
+    - 'Functions': reference/c/functions.md
+    - 'Macros': reference/c/macros.md
+    - 'Main Function': reference/c/main_function.md
+    - 'Memory Allocation': reference/c/memory_allocation.md
+    - 'Operators': reference/c/operators.md
+    - 'Pointers': reference/c/pointers.md
+    - 'Scope': reference/c/scope.md
+    - 'Strings': reference/c/strings.md
+    - 'Syntax': reference/c/syntax.md
+    - 'Types': reference/c/types.md
+    - 'Variables': reference/c/variables.md
+  - Python:
+    - 'Python Overview': reference/python/index.md
+  - Linux:
+    - 'Linux Executable': reference/linux/linux_executable.md
+  - Windows:
+    - 'Windows executable': reference/windows/windows_executable.md
+    - 'Windows process memory': reference/windows/windows_process_memory.md
